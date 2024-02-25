@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portugese Tiles</title>
+  </head>
+  <style>
+    body{
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    }
+    h1 {
+      text-align: center;
+      color: #042c72;
+      font-family: Verdana, sans-serif;
+      font-size: 50px;
+    }
+    h2 {
+      color: #042c72;
+      text-align: center;
+      font-family: Verdana, sans-serif;
+      font-weight: 300;
+      border: 15px solid transparent;
+      padding: 10px;
+      border-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/516/original/il_fullxfull.2909300796_auc1_1024x.jpg?1701455299)
+        50 repeat;
+      margin: 30px 50px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 50%;
+    }
+    p {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 18px;
+      margin: 20px 70px;
+       font-family: Verdana, sans-serif;
+    }
+
+    button {
+      display: block;
+      margin: 0px auto;
+      font-size: 20px;
+      background: #042c72;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 150ms ease-in-out;
+    }
+    button:hover {
+      background: white;
+      color: #042c72;
+      border: 1px solid #042c72;
+      cursor: pointer;
+    }
+    .bodyContent {
+      margin: 0 auto;
+    }
+    .learn-more {
+      display: block;
+      text-decoration: none;
+      color: #042c72;
+      text-align: center;
+      margin-bottom: 15px;
+       font-family: Verdana, sans-serif;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+    }
+  </style>
+  <body>
+    <div class="bodyContent">
+      <h1>Portugese Tiles</h1>
+      <h2>The Short History of Azulejos</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/515/original/Head2-Porto-Tiles_-_Co%CC%81pia.jpg?1701455265"
+        alt=" Portugese Tiles"
+      />
+      <p>
+        Even though tiles are <span><strong>originally from Egypt</strong></span>, they were first brought to
+        Portugal by the Arabs, in the 13th century at the time of their
+        invasion, which also helped shaped Portugal’s culture. However, it was
+        in the time of King D. Manuel I that tiles were first introduced to
+        Portugal. They were, in fact, imported from Seville after the King’s
+        visit to Spain. It is said that he was so enchanted by these tiles’
+        brightness, that he had to bring some back to Portugal to decorate his
+        palace walls – the National Palace of Sintra. <br />
+        Initially, Portuguese tiles were used inside most buildings. As they
+        were only bought by wealthy families, it is understandable that they
+        didn’t use them outside as much. Over time, the tendency was to use them
+        in every building’s construction, so it is possible to see them almost
+        everywhere. The decoration itself depends on the artist, or the
+        architect and constructor of the building, since you can decorate a
+        house with equal, coloured designs or pieces of art.
+        <br />
+      </p>
+      <a
+        href="https://www.beportugal.com/portuguese-tiles/"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn More at BePortugal.com
+      </a>
+      <br />
+      <button>See Portugese Tiles in Person</button>
+      <br />
+      <hr />
+      <p class="footer">
+       <em> This page was built by
+        <a href="https://www.instagram.com/haleyrbowers" target="_blank">
+          Haley Bowers </em>
+        </a>
+      </p>
+    </div>
+    <script>
+      function view() {
+        let answer = prompt("Have you ever been to Portugal?");
+        answer = answer.toLowerCase().trim();
+       
+        if(answer === "yes") {
+            alert("Maravilhoso, you have seen the incredible tiles! 🇵🇹");}
+            else {
+             alert("You need to visit Portugal! 🇵🇹");
+            }
+
+      }
+
+      let viewButton = document.querySelector("button");
+      viewButton.addEventListener("click", view);
+    </script>
+  </body>
+</html>
