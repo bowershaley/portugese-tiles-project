@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embroidery - My Hobby 🪡</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 50px;
+        margin: 10px 0;
+      }
+      h2 {
+        text-align: center;
+        font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .container {
+        margin: 20px auto;
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px dashed black;
+        background: white;
+        font-size: 15px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        font-family: Arial, sans-serif;
+      }
+      button:hover {
+        background: #e3d4c7;
+
+        cursor: pointer;
+      }
+      .learn-more-button {
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+      }
+      .theme-button {
+        font-size: 15px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+        font-family: Arial, sans-serif;
+        border-radius: 12px;
+        border: 1px solid black;
+      }
+      .theme-button:hover {
+        background: white;
+        color: black;
+      }
+      .main-image-shirts {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .main-image-shirts:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      .grid {
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        object-fit: cover;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
+        transition: all 250ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+      .dark {
+        background: radial-gradient(
+          circle at -4% -12.9%,
+          rgb(74, 98, 110) 0.3%,
+          rgb(30, 33, 48) 90.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Embroidery 🪡</h1>
+      <h2>My favorite hobby</h2>
+
+      <a href="https://en.wikipedia.org/wiki/Embroidery" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/406/original/flower-embroidery-kit-0221-2000-efc994a1adb44fb789766384215cbd4b.jpg?1702009887"
+          class="main-image-shirts"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/404/original/pexels-ruth-novak-6339511.jpg?1702009448"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/391/original/nathana-reboucas-iCPaPcsO-mM-unsplash.jpg?1702005732"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/403/original/pexels-melike-benli-7523524.jpg?1702009437"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/402/original/pexels-magdaline-nicole-3772488.jpg?1702009428"
+        />
+      </div>
+
+      <p>
+        Embroidery is the craft of decorating fabric or other materials using a
+        needle to apply thread or yarn. Embroidery may also incorporate other
+        materials such as pearls, beads, quills, and sequins.
+      </p>
+      <a
+        href="https://www.skillshare.com/browse/embroidery?locale=en&coupon=GOOGNBEN30DAYSFREE&utm_source=Google&utm_medium=paidsearch&utm_campaign=Croud_Search_Google_US_US_EN_BOF_Non-Brand&utm_term=&matchtype=&gad_source=1&gclid=CjwKCAiA98WrBhAYEiwA2WvhOkIItJqmnjO8a57px9icCwjHQ1YXDYH2Fd9qwDpI-mbvn5qoC58y7xoCFWgQAvD_BwE"
+        target="_blank"
+        class="learn-more-button"
+      >
+        <button>Learn Embroidery</button>
+      </a>
+    </div>
+    <footer>Coded by Haley Bowers</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
